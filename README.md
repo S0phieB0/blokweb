@@ -40,13 +40,13 @@ https://www.seekdiscomfort.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/homepaginasd1.jpg" width="375px" alt="home pagina seek discomfort">
-<img src="images/homepaginasd2.jpg" width="375px" alt="home pagina seek discomfort">
+<img src="images/homepaginasd1.png" width="375px" alt="home pagina seek discomfort">
+<img src="images/homepaginasd2.png" width="375px" alt="home pagina seek discomfort">
 
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/shopallpagina.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="images/shopallpagina.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
