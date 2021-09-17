@@ -1,5 +1,22 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
 }
 
+footer {
+  background-color: rgb(33, 36, 37);
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
