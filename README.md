@@ -95,10 +95,8 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Maak comments in de HTML om te laten ziet wat waar staat.
+- Zet een nav om de navigatie
 
 </details>
 
