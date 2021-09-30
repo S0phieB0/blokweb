@@ -374,7 +374,9 @@ header nav:nth-of-type(2) a {
 
   /* main  */
 
-  ar
+  article:nth-of-type(4){
+    
+  }
 
 
   /* footer  */
