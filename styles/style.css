@@ -1,17 +1,24 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 header {
   background-color: white;
 
-  display:grid;
+  display: grid;
   align-items: center;
 
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -28,34 +35,27 @@ h1 {
   font-size: 16px;
   text-transform: uppercase;
 }
-header nav {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  margin: 1em;
+
+header nav:first-of-type {
+  margin: 1.5em;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
-  height: 0.75em;
+  height: 1.5em;
 }
 
-.menu {
+.logo {
+  height: 0.75em;
 }
 
 header a:nth-of-type(2) {
   justify-self: end;
 }
-main {
-  display: flex;
-  flex-direction: column;
-}
 
-article:nth-of-type(2) {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  overflow-y: auto;
-  }
-
-  /* FOOTER */
+/* FOOTER */
 
 footer {
   background-color: rgb(33, 36, 37);
@@ -63,7 +63,7 @@ footer {
 }
 
 footer ul {
-  margin: 3em 0;
+  padding: 1em 0;
 }
 
 footer li {
@@ -76,6 +76,7 @@ footer a {
   color: white;
   font-weight: normal;
   text-transform: capitalize;
+  font-size: 0.85em;
 
 }
 
@@ -83,9 +84,17 @@ footer img {
   width: 100%;
 }
 
-/* MAIN */
-main {
+.copyright {
+  padding: 1em 0;
 }
+
+.copyright a {
+  font-weight: normal;
+  font-size: 0.5em;
+  margin:  2em ;
+}
+
+/* MAIN */
 
 main img {
   width: 100%;
@@ -93,13 +102,17 @@ main img {
 }
 
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   text-transform: uppercase;
+  font-size: 1em;
+
 
 }
 
 ul {
-list-style: none;
+  list-style: none;
 }
 
 a {
@@ -111,26 +124,279 @@ a h4 {
   text-transform: capitalize;
 }
 
-article {
-}
+/* LINKJES WIL NIET IN HET MIDDEN */
 
 button {
+  border: none;
+  background: none;
+}
+
+.button {
+  font-size: 0.75em;
   text-transform: uppercase;
   background-color: white;
-  border: none;
+  /* width: 100%; */
 
-  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 2em;
 }
 
 .blackbutton {
-color: white;
-background-color: black;
-width: 80%;
-padding: 0.5em;
-display: flex;
-justify-content: center;
+  font-size: 0.75em;
+  text-transform: uppercase;
+
+  color: white;
+  background-color: black;
+  padding: 0.75em 8em;
 }
 
-button:hover, button:active, button:focus {
+.button:hover,
+.button:active,
+.button:focus {
   color: rgb(210, 170, 77);
 }
+
+.scrollbar {
+  display: flex;
+  overflow: scroll;
+}
+
+.scrollbar h4 {
+  text-align: left;
+}
+
+.scrollbar p {
+  color: darkgrey;
+  text-align: left;
+}
+
+.scrollbar a {
+  margin: 2em 1em;
+}
+
+.scrollbar img {
+  width: 15em
+}
+
+article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+
+}
+
+article:nth-of-type(2) p {
+  margin: 2em 0;
+}
+
+article:nth-of-type(4) {
+  margin: 2em;
+
+}
+
+article:nth-of-type(5) {
+  margin: 2em;
+
+}
+
+article:nth-of-type(6) {
+  /* background-color: darkmagenta; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0 4em 0;
+}
+
+article:nth-of-type(6) a {
+  margin: 0 0.1em;
+}
+
+article:nth-of-type(6) img {
+  margin: 0;
+}
+
+article:nth-of-type(7) {
+  /* margin: 2em 0; */
+}
+
+article:nth-of-type(7) form {
+  border-bottom: 0.1em solid;
+  margin: 2em;
+}
+
+article:nth-of-type(7) h3 {
+  margin: 1em;
+}
+
+article:nth-of-type(7) label {
+  /* padding: 2em; */
+}
+
+.email {
+  border-style: none;
+
+  font-weight: 400;
+  height: 4em;
+  width: 90%;
+  padding: 1em;
+
+}
+
+.submit {
+  background-color: white;
+  border-style: none;
+  position: absolute;
+  padding: 1;
+  height: 4em;
+}
+
+.arrow {
+  width: 1em;
+  position: relative;
+}
+
+
+/* RESPONSIVE BANNER */
+
+.sbanner {
+  display: block;
+}
+
+.bbanner {
+  display: none;
+}
+
+@media (min-width:38em) {
+  .sbanner {
+    display: none;
+  }
+
+  .bbanner {
+    display: block;
+  }
+
+  .scrollbar img {
+    width: 20em;
+  }
+}
+
+/************/
+/* HET MENU */
+/************/
+
+/***************/
+/* menu button */
+.menu {
+  /* width:5em;
+  height:2.5em;
+  appearance:none;
+  background-color:var(--button-background-color);
+  border:none;
+  border-radius:.25em; */
+  
+  /* jouw code hier */
+  /* position:relative; */
+  z-index:100;
+}
+
+/*******************/
+/* lijst met links */
+ header nav ul { 
+  margin:0; 
+  padding:4em 0 0;
+  background:LightSkyBlue;
+  list-style:none;
+  
+  /* jouw code hier */
+  position:fixed;
+  left:0; right:0; top:0; bottom:0;
+  transform:translatex(-100%);
+  
+  transition:.5s;
+  
+  z-index:50;
+}
+
+header nav.toonMenu ul {
+  /* jouw code hier */
+  transform:translatex(0);
+}
+
+/************************/
+/* een link in de lijst */
+nav li {
+  margin:0; padding:0;
+}
+
+header nav:nth-of-type(2) a {
+  display:flex;
+  align-items:center;
+  gap:.25em;
+  padding:.25em 1em;
+  /* border-top:solid 1px */
+}
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 64em breed is */
+/****************************************************************/
+@media (min-width:55em) {
+
+  /* header  */
+
+  header nav {
+    /* jouw code hier */
+    justify-self:center;
+    order:0;
+  }
+  
+  header nav ul {
+    /* jouw code hier */
+    position:static;
+    transform:none;
+    
+    display:flex;
+    
+    padding:0;
+    background:none;
+  }
+  
+  header nav a {
+    /* jouw code hier */
+    border:none;
+  }
+
+  .menu img{
+    display: none;
+  }
+
+
+
+  /* main  */
+
+  ar
+
+
+  /* footer  */
+
+  footer nav{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+  }
+  
+  footer nav:nth-of-type(2){
+    justify-content: flex-end;
+  }
+
+  footer ul{
+    margin: 0 2em;
+  }
+
+  footer li{
+    margin: 1em 0;
+  }
+}
+
+
+

@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
-	
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Sophie Bouman">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Seek discomfort</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
@@ -16,12 +16,12 @@
 	<header>
 		<h1>Seek discomfort</h1>
 		<nav>
-			<a href=""> <img src="images/nav_icon.png" alt="nav button" class="menu"></a>
-			<img src="images/logo.png" alt="logo">
-			<a href=""> <img src="images/shop_icon.svg" alt="cart button"></a>
+			<a href="#" class="menu" aria-hidden="true"> <img src="images/nav_icon.png" alt="nav button"></a>
+			<a href="#"><img src="images/logo.png" alt="logo" class="logo"> </a>
+			<a href="#"> <img src="images/shop_icon.svg" alt="cart button"></a>
 		</nav>
 
-		<!-- <nav>
+		<nav>
 			<ul>
 				<li> <a>Shop</a></li>
 				<li> <a>Collection</a></li>
@@ -29,115 +29,131 @@
 				<li> <a>Content</a></li>
 				<li> <a> <img src="images/search_icon.svg" alt="zoeken"> </a></li>
 			</ul>
-		</nav> -->
-		
+		</nav>
+
 	</header>
 
 	<main>
 		<!-- BANNER -->
 		<article>
-			<a href="">
-				<img src="images/banner_seeker.jpeg" alt="3 guys in hoodies">
+			<a href="#">
+				<img src="images/banner_seeker.jpeg" alt="3 guys in hoodies" class="sbanner">
+				<img src="images/big_banner.jpeg" alt="3 guys in hoodies" class="bbanner">
+
 			</a>
 		</article>
 
 		<article>
-			<h2>More than a clothing company</h2>
-			<p>Our goal is to be a daily reminder that the best things in life exist 
+			<h2> More than a clothing company</h2>
+			<p>Our goal is to be a daily reminder that the best things in life exist
 				outside your comfort zone.</p>
-			<button>Learn more</button>
+			<a href="#" class="button"> Learn more &#8594</a>
+			<!-- Bronnen arrow: https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
+
 		</article>
 
 		<!-- PRODUCTS SCROLLING BAR -->
-		<article>
-			<a href=""> 
+		<article class="scrollbar">
+			<a href="#">
 				<img src="images/greyhoodie.jpeg" alt="hoodie">
 				<h4>Seeker Hoodie</h4>
 				<p>$55.00</p>
 			</a>
 
-			<a href=""> 
+			<a href="#">
 				<img src="images/greenhoodie.jpeg" alt="hoodie">
 				<h4>Seeker Hoodie</h4>
 				<p>$55.00</p>
 			</a>
 
-			<a href=""> 
+			<a href="#">
 				<img src="images/greytee.jpeg" alt="hoodie">
 				<h4>Seeker Tee</h4>
 				<p>$55.00</p>
 			</a>
 
-			<button class="blackbutton">Shop essentials</button>
+			<a href="#">
+				<img src="images/sweatpants.jpeg" alt="black sweatpants">
+				<h4>Seeker Sweatpants</h4>
+				<p>$50.00</p>
+			</a>
 		</article>
+
+		<a href="#" class="blackbutton">Shop essentials</a>
+
 
 		<!-- BOXES  -->
 		<article>
-			<a href="">
+			<a href="#">
 				<img src="images/flag_accessories.jpeg" alt="accessoriess - seek discomfort flag">
-				<!-- <p>Accessories</p>
-				<button>Shop now</button> -->
 			</a>
 
-			<a href="">
+			<a href="#">
 				<img src="images/hoodie_essentials.jpeg" alt="essentials - pink seek discomfort hoodie">
-				<!-- <p>Essentials</p>
-				<button>Shop now</button> -->
 			</a>
 		</article>
 
 		<!-- INSTAPOSTS SLIDESHOW -->
 		<article>
-			<section>
 			<img src="images/snow_post.jpeg" alt="girl insta post">
-			<h3>#seekerspotlight</h3>
-			<h4>@kateward_</h4>
-			<a href=""> < </a>
-			<a href=""> > </a>
-			<p>"Over the years, Seeking Discomfort has evolved into a kind of morral compas for me. 
-				It's become more about seeking truth in myself, instead of setteling for validation 
-				from others. About choosing empathy and love, when there's anger ripping through my 
-				veins. About sticking throug the hard times, instead of just giving up at the first sign of trouble."</p>
-			<button>Learn more</button>
-			</section>
 
-			<section>
-				<img src="images/" alt="">
-				<h3>#seekerspotlight</h3>
-				<h4>@</h4>
-				<a href=""> < </a>
-				<a href=""> > </a>
-				<p>"
-					"</p>
-				<button>Learn more</button>
-				</section>
+			<h3>#seekerspotlight</h3>
+			<img src="images/insta_slides.png" alt="Instagram post with username slides">
+			<a href="#" class="button"> Learn more &#8594</a>
+			<!-- Bronnen arrow: https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
+
+			<!-- <img src="images/arrow.svg" alt="arrow" class="arrow"> -->
+
+			<!-- <h4>@kateward_</h4>
+
+				<a href="#">
+					< </a> <a href="#"> >
+				</a>
+
+				<p>"Over the years, Seeking Discomfort has evolved into a kind of morral compas for me.
+					It's become more about seeking truth in myself, instead of setteling for validation
+					from others. About choosing empathy and love, when there's anger ripping through my
+					veins. About sticking throug the hard times, instead of just giving up at the first sign of
+					trouble."
+				</p> -->
+
 		</article>
 
 		<!-- INSTAPOSTS BOXES -->
+
+		<h3>#seekdiscomfort</h3>
+
 		<article>
-			<a href="">
-				<img src="images/boat_post.jpeg" alt="Happy person on a baot post">
+
+			<a href="#">
+				<img src="images/sailing_post.png" alt="Happy person on a baot post">
 			</a>
-			<a href="">
+			<a href="#">
 				<img src="images/quote_post.jpeg" alt="Quote post">
 			</a>
-			<a href="">
-				<img src="images/four_sweaters.jpeg" alt="4 four four sweaters post">
+
+			<a href="#">
+				<img src="images/second_quote_post.png" alt="Quote post">
 			</a>
-			<a href="">
-				<img src="images/second_quote_post.jpeg" alt="Quote post">
+
+			<a href="#">
+				<img src="images/university_post.png" alt="Seek discomfort university is now live">
 			</a>
+			
 		</article>
 
 		<article>
 			<h3>Join the fam</h3>
 			<form action="">
-				<label for="">
+				<!-- WAT MOET ER BIJ ACTION???-->
+				<label for="email">
 					And enter for a chance to win a $500 gift card
 				</label>
-				<input type="text">
+				<input type="email" placeholder="Enter your email here..." class="email">
+				<input type="submit" value="&#8594" class="submit">
+				<!-- Bronnen arrow: https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
+
 			</form>
-			<Button>--></Button>
 		</article>
 	</main>
 
@@ -148,48 +164,57 @@
 		<nav>
 			<ul>
 				<li>About</li>
-				<li><a href="">Our story</a></li>
-				<li><a href="">Our mantras</a></li>
-				<li><a href="">Our founders</a></li>
-				<li><a href="">Sustainability</a></li>
+				<li><a href="#">Our story</a></li>
+				<li><a href="#">Our mantras</a></li>
+				<li><a href="#">Our founders</a></li>
+				<li><a href="#">Sustainability</a></li>
 			</ul>
 			<ul>
 				<li>Help</li>
-				<li><a href="">Returns & Exchanges</a></li>
-				<li><a href="">Account</a></li>
-				<li><a href="">Contact us</a></li>
-				<li><a href="">FAQ</a></li>
+				<li><a href="#">Returns & Exchanges</a></li>
+				<li><a href="#">Account</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">FAQ</a></li>
 			</ul>
 			<ul>
 				<li>Social</li>
-				<li><a href="">Facebook</a></li>
-				<li><a href="">Instagram</a></li>
-				<li><a href="">Youtube</a></li>
-				<li><a href="">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Youtube</a></li>
+				<li><a href="#">Twitter</a></li>
 			</ul>
 		</nav>
 
 		<!-- COPPYRIGHT INFO -->
-		<nav>
-			<ul>
-				<li>
-					<a href="">© SEEK DISCOMFORT 2021</a>
-				</li>
-				<li>
-					<a href="">PRIVACY POLICY</a>
-				</li>
-				<li>
-					<a href="">TERMS & CONDITIONS</a>
-				</li>
-				<li>
-					<a href="">ACCESSIBILITY</a>
-				</li>
-			</ul>
+		<nav class="copyright">
+					<a href="#">© SEEK DISCOMFORT 2021</a>
+					<a href="#">PRIVACY POLICY</a>
+					<a href="#">TERMS & CONDITIONS</a>
+					<a href="#">ACCESSIBILITY</a>
 		</nav>
-	
+
 	</footer>
 
 	<script src="scripts/script.js"></script>
 </body>
-	
+
 </html>
+
+
+<!-- 
+FEEDBACK 24/09
+- # BIJ DE A href
+- NAAM BOVENAAN
+- button naar andere pagina moet een a zijn.
+- statische afbeelding voor sliders
+- label en input moet zelfde soort hebben.
+- procesverslag beter bijwerken
+
+- section groepeert elemeneten
+- article is los van alles 
+-->
+
+<!-- VRAGEN KOMENDE LES
+- hoe kan ik de scrollbar onzichtbaar maken bij die horizontale scrollbar?
+- Hoe kan je er voor zorgen dat de nav er goed uit ziet voor desktop met 2 links en 2 rechts van het logo?
+- Is het erg als de instagram post slides gewoon een foto zijn? zo nee, hoe kan ik dat maken? -->

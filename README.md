@@ -126,10 +126,16 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+<!-- FEEDBACK 24/09 -->
+- # BIJ DE A href
+- naam bovenaan zetten
+- button naar andere pagina moet een a zijn
+- statische afbeelding voor sliders
+- label en input moet zelfde soort hebben
+- procesverslag beter bijwerken
+
+- section groepeert elemeneten
+- article is los van alles
 
 </details>
 
