@@ -150,18 +150,23 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+- Je kan niet met alleen je toetsenbord als besturing naar de menubalk gaan
+- Grijze tekst met een witte achtergrond is iets moeilijker te lezen
+
 
 #### Titel eerste bevinding
 Hier korte omschrijving (met indien nodig een afbeelding)
+Met gebruik van tabs wordt de navigatie overgeslagen.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 
 #### Titel tweede bevinding. 
 Hier korte omschrijving (met indien nodig een afbeelding)
+Het contrast van grijs op wit is niet zo groot voor slecht ziende.
 
 Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
+Vervang de grijs door een donkerdere grijs.
 
 #### Titel volgende bevinding. 
 Hier korte omschrijving (met indien nodig een afbeelding)

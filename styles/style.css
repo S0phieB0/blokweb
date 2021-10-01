@@ -8,8 +8,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.home body {
   text-align: center;
 }
+
+/* HEADER */
 
 header {
   background-color: white;
@@ -124,9 +129,13 @@ a h4 {
   text-transform: capitalize;
 }
 
-/* LINKJES WIL NIET IN HET MIDDEN */
 
-button {
+
+
+
+/* Home page */
+
+.home button {
   border: none;
   background: none;
 }
@@ -158,36 +167,36 @@ button {
   color: rgb(210, 170, 77);
 }
 
-.scrollbar {
+.home .scrollbar {
   display: flex;
   overflow: scroll;
 }
 
-.scrollbar h4 {
+.home .scrollbar h4 {
   text-align: left;
 }
 
-.scrollbar p {
-  color: darkgrey;
+.home .scrollbar p {
+  color: rgb(111, 111, 111);
   text-align: left;
 }
 
-.scrollbar a {
+.home .scrollbar a {
   margin: 2em 1em;
 }
 
-.scrollbar img {
+.home .scrollbar img {
   width: 15em
 }
 
-article:nth-of-type(2) {
+.home article:nth-of-type(2) {
   display: flex;
   flex-direction: column;
   margin: 2em;
 
 }
 
-article:nth-of-type(2) p {
+.home article:nth-of-type(2) p {
   margin: 2em 0;
 }
 
@@ -223,15 +232,13 @@ article:nth-of-type(7) {
 article:nth-of-type(7) form {
   border-bottom: 0.1em solid;
   margin: 2em;
-}
-
-article:nth-of-type(7) h3 {
-  margin: 1em;
+  width: 30em;
 }
 
 article:nth-of-type(7) label {
   /* padding: 2em; */
 }
+
 
 .email {
   border-style: none;
@@ -258,6 +265,7 @@ article:nth-of-type(7) label {
 
 
 /* RESPONSIVE BANNER */
+/* Andere mannier om het te doen: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture */
 
 .sbanner {
   display: block;
@@ -267,18 +275,14 @@ article:nth-of-type(7) label {
   display: none;
 }
 
-@media (min-width:38em) {
-  .sbanner {
-    display: none;
-  }
+/* RESPONSIVE INSTAPOSTS */
 
-  .bbanner {
-    display: block;
-  }
+.instaslides {
+  display: block;
+}
 
-  .scrollbar img {
-    width: 20em;
-  }
+.instaslidem , .instaslideb {
+  display: none;
 }
 
 /************/
@@ -308,7 +312,6 @@ article:nth-of-type(7) label {
   background:LightSkyBlue;
   list-style:none;
   
-  /* jouw code hier */
   position:fixed;
   left:0; right:0; top:0; bottom:0;
   transform:translatex(-100%);
@@ -319,7 +322,6 @@ article:nth-of-type(7) label {
 }
 
 header nav.toonMenu ul {
-  /* jouw code hier */
   transform:translatex(0);
 }
 
@@ -344,6 +346,16 @@ header nav:nth-of-type(2) a {
 
   /* header  */
 
+  header nav:first-of-type {
+    display: none;
+  }
+
+  header nav:nth-of-type(2) {
+    display: block;
+    margin: 1.5em;
+
+  }
+
   header nav {
     /* jouw code hier */
     justify-self:center;
@@ -351,7 +363,7 @@ header nav:nth-of-type(2) a {
   }
   
   header nav ul {
-    /* jouw code hier */
+    /*jouw code hier */
     position:static;
     transform:none;
     
@@ -369,17 +381,64 @@ header nav:nth-of-type(2) a {
   .menu img{
     display: none;
   }
+}
 
-
-
-  /* main  */
-
-  article:nth-of-type(4){
-    
+@media (min-width:38em) {
+  .sbanner {
+    display: none;
   }
 
+  .bbanner {
+    display: block;
+  }
 
-  /* footer  */
+  .home .scrollbar img {
+    width: 20em;
+  }
+  
+  .instaslidem {
+    display: block;
+  }
+
+  .instaslideb , .instaslides {
+    display: none;
+  }
+}
+
+@media (min-width:55em) {
+  /* MAIN */
+  .instaslideb {
+    display: block;
+  }
+
+  .instaslidem , .instaslides {
+    display: none;
+  }
+
+  article:nth-of-type(4){
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  
+  article:nth-of-type(4) a{
+    margin: 1em;
+  }
+
+  article:nth-of-type(6) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  article:nth-of-type(6) a {
+    margin: 0 0.1em;
+  }
+  
+  article:nth-of-type(6) img {
+    margin: 0;
+  }
+
+  /* FOOTER  */
 
   footer nav{
     display: flex;
@@ -402,3 +461,69 @@ header nav:nth-of-type(2) a {
 
 
 
+
+
+/* Shop page */
+
+/* scrollbar */
+.shop .scrollbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.shop .scrollbar h4 {
+  text-align: left;
+}
+
+.shop .scrollbar p {
+  color: rgb(111, 111, 111);
+  text-align: left;
+}
+
+.shop .scrollbar a {
+  margin: 2em 1em;
+  max-width: 20em;
+  min-width: 5em;
+}
+
+/* dropdown */
+/* https://css-tricks.com/solved-with-css-dropdown-menus/ */
+
+.shop article:nth-of-type(2) button{
+  display: block;
+}
+
+.dropdown {
+  transition-duration: 1s;
+}
+.dropdown ul {
+/* visibility: hidden;
+opacity: 0;
+display: none; */
+
+visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+/* .dropdown:hover {
+visibility: visible;
+opacity: 1;
+display: block;
+} */
+
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+li {
+  clear: both;
+  width: 100%;
+}
