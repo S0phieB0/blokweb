@@ -175,6 +175,14 @@ header nav ul {
 
 /* MAIN */
 
+article {
+  justify-content: center;
+}
+
+.scrollbar {
+  justify-content: flex-start;
+}
+
 main img {
   width: 100%;
   margin: 1em 0;
@@ -201,16 +209,16 @@ a h4 {
   text-transform: capitalize;
 }
 
-main article:last-of-type {
+.form {
   margin: 5em 0;
   display: grid;
 }
 
-main article:last-of-type h3 {
+.form h3 {
   font-size: 1.5em;
 }
 
-main article:last-of-type form {
+.form form {
   justify-self: center;
   border-bottom: 0.1em solid;
   margin: 2em;
@@ -283,10 +291,6 @@ footer img {
   text-align: center;
 }
 
-.home article {
-  justify-content: center;
-}
-
 .goal {
   display: flex;
   flex-direction: column;
@@ -353,16 +357,16 @@ article:nth-of-type(8) a {
   padding: 0.75em 8em;
 }
 
-.home .scrollbar {
+.scrollbar {
   display: flex;
   overflow: scroll;
 }
 
-.home .scrollbar h4 {
+.scrollbar h4 {
   text-align: left;
 }
 
-.home .scrollbar p {
+.scrollbar p {
   color: rgb(111, 111, 111);
   text-align: left;
 }
@@ -541,7 +545,7 @@ textarea {
     display: none;
   }
 
-  
+
   /* Home page */
 
   /* responsive instagram post */

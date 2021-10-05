@@ -182,6 +182,9 @@ Ik heb het opgelost door de kleur door een donkerdere versie van grijs te vervan
 ### Stand van zaken
 Mijn eerste pagina is zo goed als af. De menu balk werkt nog steeds niet precies zo als het zou moeten, dus dat vind ik nog best wel lastig. Ik was dus begonnen aan mijn tweede pagina, maar aangezien je 1 css bestand mag gebruiken kost het me ook veel tijd om ervoor te zorgen dat ik de juiste element op de juiste pagina aanspreek.
 
+<img src="images/w4scrn3.png" width="375px" alt="Een deel van de content pagina">
+
+
 ### Agenda voor meeting
 samen met je groepje opstellen
 
@@ -199,6 +202,10 @@ Ik loop nog steeds achter, dus de student assistent zei dat ik me vooral moest f
 }
 Helaas werkte het niet, maar hij zei dat het ook niet erg zou zijn om het zo te laten.
 
+<img src="images/w4scrn4.png" width="375px" alt="De scrollbar van home pagina">
+<img src="images/w4scrn5.png" width="375px" alt="Html tweede pagina">
+
+
 </details>
 
 
@@ -211,11 +218,18 @@ Helaas werkte het niet, maar hij zei dat het ook niet erg zou zijn om het zo te 
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het erg leuk om de website langzaam een geheel te zien worden en ik ben ook best wel trots met hoe erg de website die ik heb gemaakt op de orginele lijkt. Ik had wel erg veel moeite met de laatste paar aanpassingen. Ik had bijna bij elke stap dat er wel dingen veranderde die ik niet wou veranderen, dus het was erg veel puzzelen aan het einde.
+Ik merkte dat ik veel nth-of-type() had gebruikt die niet wwerkte op de manier waarop ik wilde dat ze werkte. Ik had namelijk op sommige punten dat er bepaalde dingen weg gingen en dan kwam er iets voor in de plaats, maar dat zorgde ervoor dat de volgorde door de war ging. Daarom heb ik uiteindelijk meer class gebruikt dan ik in het begin van plan was.
+
+<img src="images/w5scrn1.png" width="375px" alt="De css waar je ziet dat ik enth-of-type() en class gebruik">
 
 ### Screenshot(s)
 
 hier screenshot(s) van je eindresultaat
+<img src="images/w5scrn4.png" width="375px" alt="Home page first part">
+<img src="images/w5scrn2.png" width="375px" alt="Home page second part">
+<img src="images/w5scrn3.png" width="375px" alt="Content page">
+
 
 </details>
 
