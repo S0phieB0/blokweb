@@ -160,13 +160,13 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 Als je gebruik maakt van tabs, dan wordt de navigatie overgeslagen en dat zorgt ervoor dat het niet meer toegangelijk is voor iedereen.
 Ik heb uiteindelijk alle code nagekeken en over een a omheen gezet met een # bij de href en daarna deed hij het wel.
 
-<img src="images/w3scrn1.png" width="375px" alt="pagina screenshot pagina met alleen html">
+<img src="images/w4scrn1.png" width="375px" alt="pagina screenshot pagina met alleen html">
 
 #### Titel tweede bevinding. 
 Het contrast van grijze tekst op een witte achtergrond is niet zo duidelijk voor sommige slecht ziende mensen.
 Ik heb het opgelost door de kleur door een donkerdere versie van grijs te vervangen.
 
-<img src="images/w3scrn2.png" width="375px" alt="pagina screenshot pagina met alleen html">
+<img src="images/w4scrn2.png" width="375px" alt="pagina screenshot pagina met alleen html">
 
 </details>
 
