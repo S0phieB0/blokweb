@@ -9,29 +9,31 @@
 	<title>Seek discomfort</title>
 
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
+	<!-- Bron: https://emojigraph.org/high-voltage/ -->
 </head>
 
 <body class="home">
 	<header>
 		<h1>Seek discomfort</h1>
 		<nav>
-			<a href="#" class="menu" aria-hidden="true"> <img src="images/nav_icon.png" alt="nav button"></a>
+			<a href="#" class="menu"> <img src="images/nav_icon.png" alt="nav button"></a>
 			<a href="#"><img src="images/logo.png" alt="logo" class="logo"> </a>
 			<a href="#" class="shopbag"> <img src="images/shop_icon.svg" alt="cart button"></a>
 		</nav>
 
-		<nav>
-			<ul>
-				<li class=""><a href="shop.html">Shop</a></li>
-				<li><a href="shop.html">Collection</a></li>
-				<li><a href="#"><img src="images/logo.png" alt="logo" class="logo"> </a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Content</a></li>
-				<li><a href="#"> <img src="images/search_icon.svg" alt="zoeken"> </a></li>
-				<li><a href="#"> <img src="images/shop_icon.svg" alt="cart button"></a></li>
-			</ul>
-		</nav>
+        <nav class="bignav">
+            <ul>
+                <li class="shop"><a href="#">Shop</a></li>
+                <li class="collection"><a href="#">Collection</a></li>
+                <li><a href="index.html"><img src="images/logo.png" alt="logo" class="logo"> </a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="contentnav"><a href="content.html">Content</a></li>
+                <li class="search"><a href="#"> <img src="images/search_icon.svg" alt="search"> </a></li>
+                <li class="searching"><a href="#"> <img src="images/search_icon.svg" alt="search">Search</a></li>
+                <li class="cart"><a href="#"> <img src="images/shop_icon.svg" alt="cart button"></a></li>
+            </ul>
+        </nav>
 
 	</header>
 
@@ -45,7 +47,7 @@
 		</article>
 
 
-		<article>
+		<article class="goal">
 			<h2> More than a clothing company</h2>
 			<p>Our goal is to be a daily reminder that the best things in life exist
 				outside your comfort zone.</p>
@@ -96,49 +98,32 @@
 		</article>
 
 		<!-- INSTAPOSTS SLIDESHOW -->
-		<article>
-			<section class="instaslides">
+		<section>
+			<article class="instaslides">
 				<img src="images/snow_post.jpeg" alt="girl insta post">
 
 				<h3>#seekerspotlight</h3>
 				<img src="images/insta_slides.png" alt="Instagram post with username slides">
 				<a href="#" class="button"> Learn more &#8594</a>
-			</section>
+			</article>
 
-			<section class="instaslidem">
+			<article class="instaslidem">
 				<img src="images/mseekerspotlight.png" alt="Instagram post with username slides">
 				<a href="#" class="button"> Learn more &#8594</a>
-			</section>
+			</article>
 
-			<section class="instaslideb">
+			<article class="instaslideb">
 				<img src="images/bseekerspotlight.png" alt="Instagram post with username slides">
-			</section>
+			</article>
 
 			<!-- Bronnen arrow: https://www.w3schools.com/charsets/ref_utf_arrows.asp -->
-
-			<!-- <img src="images/arrow.svg" alt="arrow" class="arrow"> -->
-
-			<!-- <h4>@kateward_</h4>
-
-				<a href="#">
-					< </a> <a href="#"> >
-				</a>
-
-				<p>"Over the years, Seeking Discomfort has evolved into a kind of morral compas for me.
-					It's become more about seeking truth in myself, instead of setteling for validation
-					from others. About choosing empathy and love, when there's anger ripping through my
-					veins. About sticking throug the hard times, instead of just giving up at the first sign of
-					trouble."
-				</p> -->
-
-		</article>
+		</section>
 
 		<!-- INSTAPOSTS BOXES -->
 
 		<h3>#seekdiscomfort</h3>
 
-		<article>
-
+		<article class="instapost">
 			<a href="#">
 				<img src="images/sailing_post.png" alt="Happy person on a baot post">
 			</a>
@@ -153,13 +138,11 @@
 			<a href="#">
 				<img src="images/university_post.png" alt="Seek discomfort university is now live">
 			</a>
-
 		</article>
 
 		<article>
 			<h3>Join the fam</h3>
-			<form action="">
-				<!-- WAT MOET ER BIJ ACTION???-->
+			<form action="#">
 				<label for="email">
 					And enter for a chance to win a $500 gift card
 				</label>
@@ -213,22 +196,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-FEEDBACK 24/09
-- # BIJ DE A href
-- NAAM BOVENAAN
-- button naar andere pagina moet een a zijn.
-- statische afbeelding voor sliders
-- label en input moet zelfde soort hebben.
-- procesverslag beter bijwerken
-
-- section groepeert elemeneten
-- article is los van alles 
--->
-
-<!-- VRAGEN KOMENDE LES
-- hoe kan ik de scrollbar onzichtbaar maken bij die horizontale scrollbar?
-- Hoe kan je er voor zorgen dat de nav er goed uit ziet voor desktop met 2 links en 2 rechts van het logo?
-- Je kan niet door de nav met je toetsenbord -->

@@ -10,9 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.home body {
-  text-align: center;
-}
+
 
 /* HEADER */
 
@@ -41,8 +39,14 @@ h1 {
   text-transform: uppercase;
 }
 
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobiel menu balk */
 header nav:first-of-type {
-  margin: 1.5em;
+  margin: 1em;
 
   display: flex;
   justify-content: space-between;
@@ -52,13 +56,185 @@ header img {
   height: 1.5em;
 }
 
+.menu {
+  width: 5em;
+  position: relative;
+  z-index: 100;
+}
+
 .logo {
   height: 0.75em;
 }
 
 header a:nth-of-type(2) {
-  justify-self: end;
+  /* justify-self: end; */
 }
+
+header nav ul {
+  margin: 0;
+  padding: 4em 0 0;
+  list-style: none;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 6em;
+  bottom: 0;
+  transform: translatex(200%);
+
+  z-index: 50;
+}
+
+/* Desktop menu balk */
+.bignav{
+  width: 100%;
+}
+
+.bignav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.bignav a {
+  display: flex;
+  gap: .25em;
+  padding: .25em 1em;
+}
+
+/* .shop, .collection {
+  justify-self: left;
+}
+
+.logo {
+  justify-self: center;
+}
+
+.about, .contentnav, .search, .cart {
+  justify-self: flex-end;
+} */
+
+/* Uitgeklapt menu */
+.toonMenu {
+  transform: translatex(0);
+  padding: 1em 0 0 5em;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: white;
+}
+
+.toonMenu li {
+  padding: 1.5em;
+  width: 90%;
+}
+
+.toonMenu .shop {
+  order: 1;
+}
+
+.toonMenu .collection {
+  order: 2;
+}
+
+.toonMenu .logo {
+  display: none;
+}
+
+.toonMenu .about {
+  order: 3;
+}
+
+.toonMenu .contentnav {
+  order: 4;
+}
+
+.toonMenu .search {
+  display: none;
+}
+
+.toonMenu .searching{
+  display: block;
+  align-items: baseline;
+  order: -1;
+  border-bottom: 0.1em solid black;
+}
+
+.toonMenu .searching img {
+  margin: 0 0.5em 0 0;
+}
+
+.searching {
+  display: none;
+}
+
+.toonMenu .cart {
+  display: none;
+}
+
+
+
+/* MAIN */
+
+main img {
+  width: 100%;
+  margin: 1em 0;
+}
+
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a h4 {
+  text-transform: capitalize;
+}
+
+main article:last-of-type {
+  margin: 5em 0;
+  display: grid;
+}
+
+main article:last-of-type h3 {
+  font-size: 1.5em;
+}
+
+main article:last-of-type form {
+  justify-self: center;
+  border-bottom: 0.1em solid;
+  margin: 2em;
+}
+
+.email {
+  border-style: none;
+
+  font-weight: 400;
+  height: 4em;
+  width: 90%;
+  padding: 1em;
+
+}
+
+.submit {
+  background-color: white;
+  border-style: none;
+  /* position: absolute; */
+  padding: 1;
+  height: 4em;
+}
+
+
 
 /* FOOTER */
 
@@ -96,44 +272,55 @@ footer img {
 .copyright a {
   font-weight: normal;
   font-size: 0.5em;
-  margin:  2em ;
+  margin: 2em;
 }
-
-/* MAIN */
-
-main img {
-  width: 100%;
-  margin: 1em 0;
-}
-
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-  font-size: 1em;
-
-
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a h4 {
-  text-transform: capitalize;
-}
-
-
 
 
 
 /* Home page */
+
+.home {
+  text-align: center;
+}
+
+.home article {
+  justify-content: center;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+
+}
+
+.goal p {
+  margin: 2em 0;
+}
+
+.home article:nth-of-type(4) {
+  margin: 2em;
+
+}
+
+.home section:first-of-type {
+  margin: 2em;
+
+}
+
+.home article:nth-of-type(8) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0 4em 0;
+}
+
+article:nth-of-type(8) a {
+  margin: 0 0.1em;
+}
+
+.home article:nth-of-type(8) img {
+  margin: 0;
+}
 
 .home button {
   border: none;
@@ -144,12 +331,17 @@ a h4 {
   font-size: 0.75em;
   text-transform: uppercase;
   background-color: white;
-  /* width: 100%; */
 
   display: flex;
   justify-content: center;
 
   margin: 2em;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  color: rgb(210, 170, 77);
 }
 
 .blackbutton {
@@ -159,12 +351,6 @@ a h4 {
   color: white;
   background-color: black;
   padding: 0.75em 8em;
-}
-
-.button:hover,
-.button:active,
-.button:focus {
-  color: rgb(210, 170, 77);
 }
 
 .home .scrollbar {
@@ -189,84 +375,7 @@ a h4 {
   width: 15em
 }
 
-.home article:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-  margin: 2em;
-
-}
-
-.home article:nth-of-type(2) p {
-  margin: 2em 0;
-}
-
-article:nth-of-type(4) {
-  margin: 2em;
-
-}
-
-article:nth-of-type(5) {
-  margin: 2em;
-
-}
-
-article:nth-of-type(6) {
-  /* background-color: darkmagenta; */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2em 0 4em 0;
-}
-
-article:nth-of-type(6) a {
-  margin: 0 0.1em;
-}
-
-article:nth-of-type(6) img {
-  margin: 0;
-}
-
-article:nth-of-type(7) {
-  /* margin: 2em 0; */
-}
-
-article:nth-of-type(7) form {
-  border-bottom: 0.1em solid;
-  margin: 2em;
-  width: 30em;
-}
-
-article:nth-of-type(7) label {
-  /* padding: 2em; */
-}
-
-
-.email {
-  border-style: none;
-
-  font-weight: 400;
-  height: 4em;
-  width: 90%;
-  padding: 1em;
-
-}
-
-.submit {
-  background-color: white;
-  border-style: none;
-  position: absolute;
-  padding: 1;
-  height: 4em;
-}
-
-.arrow {
-  width: 1em;
-  position: relative;
-}
-
-
 /* RESPONSIVE BANNER */
-/* Andere mannier om het te doen: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture */
-
 .sbanner {
   display: block;
 }
@@ -275,115 +384,103 @@ article:nth-of-type(7) label {
   display: none;
 }
 
-/* RESPONSIVE INSTAPOSTS */
-
+/* responsive instagram post */
 .instaslides {
   display: block;
 }
 
-.instaslidem , .instaslideb {
+.instaslideb,
+.instaslidem {
   display: none;
 }
 
-/************/
-/* HET MENU */
-/************/
 
-/***************/
-/* menu button */
-.menu {
-  /* width:5em;
-  height:2.5em;
-  appearance:none;
-  background-color:var(--button-background-color);
-  border:none;
-  border-radius:.25em; */
-  
-  /* jouw code hier */
-  /* position:relative; */
-  z-index:100;
+
+/* Content page */
+
+.content {
+  text-align: center;
 }
 
-/*******************/
-/* lijst met links */
- header nav ul { 
-  margin:0; 
-  padding:4em 0 0;
-  background:LightSkyBlue;
-  list-style:none;
-  
-  position:fixed;
-  left:0; right:0; top:0; bottom:0;
-  transform:translatex(-100%);
-  
-  transition:.5s;
-  
-  z-index:50;
+.content main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em;
 }
 
-header nav.toonMenu ul {
-  transform:translatex(0);
+.content h2,
+.content p {
+  font-family: serif;
 }
 
-/************************/
-/* een link in de lijst */
-nav li {
-  margin:0; padding:0;
+.content h2 {
+  font-size: 1.5em;
 }
 
-header nav:nth-of-type(2) a {
-  display:flex;
-  align-items:center;
-  gap:.25em;
-  padding:.25em 1em;
-  /* border-top:solid 1px */
+.content main p {
+  align-content: center;
+  margin: 2em;
 }
 
-/****************************************************************/
-/* styling voor de header als de browser minimaal 64em breed is */
-/****************************************************************/
-@media (min-width:55em) {
-
-  /* header  */
-
-  header nav:first-of-type {
-    display: none;
-  }
-
-  header nav:nth-of-type(2) {
-    display: block;
-    margin: 1.5em;
-
-  }
-
-  header nav {
-    /* jouw code hier */
-    justify-self:center;
-    order:0;
-  }
-  
-  header nav ul {
-    /*jouw code hier */
-    position:static;
-    transform:none;
-    
-    display:flex;
-    
-    padding:0;
-    background:none;
-  }
-  
-  header nav a {
-    /* jouw code hier */
-    border:none;
-  }
-
-  .menu img{
-    display: none;
-  }
+/* Contact us form */
+.contact {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+
+.contact input,
+textarea {
+  margin: 0.5em;
+  padding: 1em;
+  width: 65%;
+  border: 0.1em solid goldenrod;
+  border-radius: 0.2em;
+}
+
+textarea {
+  align-self: center;
+  font-family: sans-serif;
+  margin: 0;
+  height: 15em;
+}
+
+.content form button {
+  /* position: absolute;
+  right: 16%;
+  bottom: -5em;
+  z-index: -1; */
+  align-self: flex-end;
+  padding: 1em 2em;
+  margin: 1em;
+  width: 7em;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 0.2em;
+
+}
+
+/* Join the fam form */
+.join {
+  width: 75%
+}
+
+.content .submit {
+  align-self: flex-end;
+}
+
+
+
+/* MEDIA */
 
 @media (min-width:38em) {
+
+  /* Home page */
+
   .sbanner {
     display: none;
   }
@@ -395,135 +492,118 @@ header nav:nth-of-type(2) a {
   .home .scrollbar img {
     width: 20em;
   }
-  
+
+  /* responsive instagram post */
   .instaslidem {
     display: block;
   }
 
-  .instaslideb , .instaslides {
+  .instaslides,
+  .instaslideb {
     display: none;
   }
+
 }
 
 @media (min-width:55em) {
-  /* MAIN */
+
+  /* Header  */
+
+  header nav:first-of-type {
+    display: none;
+  }
+
+  header .bignav {
+    display: block;
+    margin: 1.5em;
+  }
+
+  header nav {
+    justify-self: center;
+    order: 0;
+  }
+
+  header nav ul {
+    position: static;
+    transform: none;
+
+    display: flex;
+
+    padding: 0;
+    background: none;
+  }
+
+  header nav a {
+    border: none;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  
+  /* Home page */
+
+  /* responsive instagram post */
   .instaslideb {
     display: block;
   }
 
-  .instaslidem , .instaslides {
+  .instaslidem,
+  .instaslides {
     display: none;
   }
 
-  article:nth-of-type(4){
+  /* 2 Boxes */
+  article:nth-of-type(4) {
     display: flex;
     flex-direction: row;
     max-width: 100%;
   }
-  
-  article:nth-of-type(4) a{
+
+  article:nth-of-type(4) a {
     margin: 1em;
   }
 
-  article:nth-of-type(6) {
+  /* Instaposts */
+  .instapost {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2em 0;
   }
 
-  article:nth-of-type(6) a {
+  .instapost a {
     margin: 0 0.1em;
   }
-  
-  article:nth-of-type(6) img {
+
+  .instapost img {
     margin: 0;
+  }
+
+
+  /* Content page */
+
+  .content main {
+    margin: 5em;
   }
 
   /* FOOTER  */
 
-  footer nav{
+  footer nav {
     display: flex;
     flex-direction: row;
     text-align: start;
   }
-  
-  footer nav:nth-of-type(2){
+
+  footer nav:nth-of-type(2) {
     justify-content: flex-end;
   }
 
-  footer ul{
+  footer ul {
     margin: 0 2em;
   }
 
-  footer li{
+  footer li {
     margin: 1em 0;
   }
-}
-
-
-
-
-
-/* Shop page */
-
-/* scrollbar */
-.shop .scrollbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-}
-
-.shop .scrollbar h4 {
-  text-align: left;
-}
-
-.shop .scrollbar p {
-  color: rgb(111, 111, 111);
-  text-align: left;
-}
-
-.shop .scrollbar a {
-  margin: 2em 1em;
-  max-width: 20em;
-  min-width: 5em;
-}
-
-/* dropdown */
-/* https://css-tricks.com/solved-with-css-dropdown-menus/ */
-
-.shop article:nth-of-type(2) button{
-  display: block;
-}
-
-.dropdown {
-  transition-duration: 1s;
-}
-.dropdown ul {
-/* visibility: hidden;
-opacity: 0;
-display: none; */
-
-visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-/* .dropdown:hover {
-visibility: visible;
-opacity: 1;
-display: block;
-} */
-
-.dropdown:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-li {
-  clear: both;
-  width: 100%;
 }
